@@ -4,7 +4,7 @@ accounts:
   message: "Welcome to Nostra accounts API"
   contactDetails:
     name: "Vlad - Developer"
-    email: "vlad@vlad.com"
+    email: "{cipher}d7bad0ae402dae7114bced16604da42f05de5e9365ff54890a8e767ed1cdb927"
   onCallSupport:
     - (812) 123-4567
     - (813) 123-4567
