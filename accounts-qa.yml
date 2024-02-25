@@ -1,0 +1,10 @@
+build:
+  version: "2.0"
+accounts:
+  message: "Welcome to Nostra accounts related QA API"
+  contactDetails:
+    name: "Vlad - QA Developer"
+    email: "vlad@vlad.com"
+  onCallSupport:
+    - (612) 123-4567
+    - (613) 123-4567

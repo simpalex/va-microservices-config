@@ -1,0 +1,12 @@
+cards:
+  message: "PROD data!"
+  bank:
+    address: "5826 Tanagerlake Rd"
+    city: "Lithia"
+  phone:
+    - "813 1234567"
+    - "813 7654321"
+  material: "plastic"
+  rate: "30%"
+build:
+  version: "2.1"

@@ -1,0 +1,12 @@
+cards:
+  message: "Default data!"
+  bank:
+    address: "5826 Tanagerlake Rd"
+    city: "Lithia"
+  phone:
+    - "812 1234567"
+    - "812 7654321"
+  material: "wood"
+  rate: "0%"
+build:
+  version: "0.1"

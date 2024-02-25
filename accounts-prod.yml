@@ -1,0 +1,10 @@
+build:
+  version: "1.0"
+accounts:
+  message: "Welcome to Nostra accounts Prodaction API"
+  contactDetails:
+    name: "Vlad - Prod Developer"
+    email: "vlad@vlad.com"
+  onCallSupport:
+    - (512) 123-4567
+    - (513) 123-4567
