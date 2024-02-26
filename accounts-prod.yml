@@ -1,7 +1,7 @@
 build:
   version: "1.0"
 accounts:
-  message: "Welcome to Nostra accounts Prodaction API"
+  message: "Welcome to Nostra accounts !Production! API"
   contactDetails:
     name: "Vlad - Prod Developer"
     email: "{cipher}d7bad0ae402dae7114bced16604da42f05de5e9365ff54890a8e767ed1cdb927"
