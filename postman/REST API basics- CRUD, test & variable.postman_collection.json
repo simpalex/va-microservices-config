@@ -191,6 +191,34 @@
 							"response": []
 						},
 						{
+							"name": "fetchCustomerByMobileNumber FULL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/customers/fetch-full-customer?mobileNumber=8138487219",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"fetch-full-customer"
+									],
+									"query": [
+										{
+											"key": "mobileNumber",
+											"value": "8138487219"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "fetchCustomerByMobileNumber WRONG",
 							"request": {
 								"method": "GET",
@@ -393,7 +421,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"loanNumber\": \"123456789\",\r\n    \"loanType\": \"Short\",\r\n    \"totalLoan\": 100,\r\n    \"amountPaid\": 20,\r\n    \"outstandingAmount\": 80\r\n}",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"loanNumber\": \"123456789\",\r\n    \"loanType\": \"Long\",\r\n    \"totalLoan\": 100,\r\n    \"amountPaid\": 20,\r\n    \"outstandingAmount\": 80\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -562,7 +590,7 @@
 							"response": []
 						},
 						{
-							"name": "createCard Credit",
+							"name": "createCard Debit",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -593,7 +621,7 @@
 							"response": []
 						},
 						{
-							"name": "createCard Debit",
+							"name": "createCard Credit",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -847,6 +875,197 @@
 											"key": "",
 											"value": "",
 											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "gatewayserver",
+					"item": [
+						{
+							"name": "createCustomer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Vlad Aleko\",\r\n    \"email\": \"ofolder@yahoo+com\",\r\n    \"mobileNumber\": \"8138487219\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/accounts/api/v1/accounts/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"accounts",
+										"api",
+										"v1",
+										"accounts",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createLoan Short",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"loanNumber\": \"123456789\",\r\n    \"loanType\": \"Short\",\r\n    \"totalLoan\": 100,\r\n    \"amountPaid\": 20,\r\n    \"outstandingAmount\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/loans/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"loans",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createLoan Long",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"loanNumber\": \"987654321\",\r\n    \"loanType\": \"Long\",\r\n    \"totalLoan\": 100,\r\n    \"amountPaid\": 20,\r\n    \"outstandingAmount\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/loans/api/v1/loans/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"loans",
+										"api",
+										"v1",
+										"loans",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createCard Credit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"cardNumber\": \"1111222233334444\",\r\n    \"cardType\": \"Credit\",\r\n    \"totalLimit\": 100,\r\n    \"amountUsed\": 20,\r\n    \"availableAmount\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/cards/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"cards",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createCard Debit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"cardNumber\": \"4444333322221111\",\r\n    \"cardType\": \"Debit\",\r\n    \"totalLimit\": 100,\r\n    \"amountUsed\": 80,\r\n    \"availableAmount\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/v1/cards/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"v1",
+										"cards",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetchCustomerByMobileNumber FULL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/accounts/api/v1/customers/fetch-full-customer?mobileNumber=8138487219",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"accounts",
+										"api",
+										"v1",
+										"customers",
+										"fetch-full-customer"
+									],
+									"query": [
+										{
+											"key": "mobileNumber",
+											"value": "8138487219"
 										}
 									]
 								}
