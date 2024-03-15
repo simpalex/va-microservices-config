@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "b195d110-6311-4a1b-a029-961699fb2298",
-		"name": "REST API basics: CRUD, test & variable",
+		"name": "Nostra_v_1",
 		"description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Tests\" tab**\n\nTests help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/b5f280a7-4b09-48ec-857f-0a7ed99d7ef8/U2NyZWVuc2hvdCAyMDIzLTAzLTI3IGF0IDkuNDcuMjggUE0ucG5n\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) in \"Tests\" to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "32233609"
@@ -291,7 +291,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8080/api/v1/accounts/delete?mobileNumber=8138487219",
+									"raw": "http://localhost:8080/api/v1/delete?mobileNumber=8138487219",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -300,7 +300,6 @@
 									"path": [
 										"api",
 										"v1",
-										"accounts",
 										"delete"
 									],
 									"query": [
@@ -428,7 +427,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8081/api/v1/loans/create",
+									"raw": "http://localhost:8081/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -437,7 +436,6 @@
 									"path": [
 										"api",
 										"v1",
-										"loans",
 										"create"
 									]
 								}
@@ -459,7 +457,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8081/api/v1/loans/create",
+									"raw": "http://localhost:8081/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -468,7 +466,6 @@
 									"path": [
 										"api",
 										"v1",
-										"loans",
 										"create"
 									]
 								}
@@ -497,7 +494,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8081/api/v1/loans/update?loanNumber=123456789&newPayment=10",
+									"raw": "http://localhost:8081/api/v1/update?loanNumber=123456789&newPayment=10",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -506,7 +503,6 @@
 									"path": [
 										"api",
 										"v1",
-										"loans",
 										"update"
 									],
 									"query": [
@@ -529,7 +525,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8081/api/v1/loans/delete?loanNumber=123456789",
+									"raw": "http://localhost:8081/api/v1/delete?loanNumber=123456789",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -538,7 +534,6 @@
 									"path": [
 										"api",
 										"v1",
-										"loans",
 										"delete"
 									],
 									"query": [
@@ -603,7 +598,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/create",
+									"raw": "http://localhost:8082/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -612,7 +607,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"create"
 									]
 								}
@@ -634,7 +628,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/create",
+									"raw": "http://localhost:8082/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -643,7 +637,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"create"
 									]
 								}
@@ -656,7 +649,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/fetch?cardNumber=1111222233334444",
+									"raw": "http://localhost:8082/api/v1/fetch?cardNumber=1111222233334444",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -665,7 +658,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"fetch"
 									],
 									"query": [
@@ -684,7 +676,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/fetch-mobile?mobileNumber=8138487219",
+									"raw": "http://localhost:8082/api/v1/fetch-mobile?mobileNumber=8138487219",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -693,7 +685,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"fetch-mobile"
 									],
 									"query": [
@@ -712,7 +703,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/update?cardNumber=1111222233334444&newTransaction=15",
+									"raw": "http://localhost:8082/api/v1/update?cardNumber=1111222233334444&newTransaction=15",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -721,7 +712,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"update"
 									],
 									"query": [
@@ -744,7 +734,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/delete?cardNumber=1111222233334444",
+									"raw": "http://localhost:8082/api/v1/delete?cardNumber=1111222233334444",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -753,7 +743,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"delete"
 									],
 									"query": [
@@ -900,7 +889,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8072/accounts/api/v1/accounts/create",
+									"raw": "http://localhost:8072/accounts/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -910,7 +899,6 @@
 										"accounts",
 										"api",
 										"v1",
-										"accounts",
 										"create"
 									]
 								}
@@ -932,7 +920,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8081/api/v1/loans/create",
+									"raw": "http://localhost:8081/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -941,7 +929,6 @@
 									"path": [
 										"api",
 										"v1",
-										"loans",
 										"create"
 									]
 								}
@@ -963,7 +950,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8072/loans/api/v1/loans/create",
+									"raw": "http://localhost:8072/loans/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -973,7 +960,6 @@
 										"loans",
 										"api",
 										"v1",
-										"loans",
 										"create"
 									]
 								}
@@ -995,7 +981,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/create",
+									"raw": "http://localhost:8082/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1004,7 +990,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"create"
 									]
 								}
@@ -1026,7 +1011,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8082/api/v1/cards/create",
+									"raw": "http://localhost:8082/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1035,7 +1020,6 @@
 									"path": [
 										"api",
 										"v1",
-										"cards",
 										"create"
 									]
 								}
@@ -1048,7 +1032,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8072/accounts/api/v1/customers/fetch-full-customer?mobileNumber=8138487219",
+									"raw": "http://localhost:8072/accounts/api/v1/fetch-full-customer?mobileNumber=8138487219",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1058,7 +1042,6 @@
 										"accounts",
 										"api",
 										"v1",
-										"customers",
 										"fetch-full-customer"
 									],
 									"query": [
