@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b195d110-6311-4a1b-a029-961699fb2298",
+		"_postman_id": "44e83ab8-a694-434f-a942-cb5dfd44e030",
 		"name": "Nostra_v_1",
 		"description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Tests\" tab**\n\nTests help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/b5f280a7-4b09-48ec-857f-0a7ed99d7ef8/U2NyZWVuc2hvdCAyMDIzLTAzLTI3IGF0IDkuNDcuMjggUE0ucG5n\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) in \"Tests\" to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
@@ -107,7 +107,10 @@
 							"name": "callEcho",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -115,7 +118,10 @@
 							"name": "callBuildInfo",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -123,7 +129,10 @@
 							"name": "callGetPath",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -131,7 +140,20 @@
 							"name": "callContactInfo",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/contact-info",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"contact-info"
+									]
+								}
 							},
 							"response": []
 						},
@@ -139,7 +161,10 @@
 							"name": "callLliveContactInfo",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -186,7 +211,10 @@
 							"name": "fetchCustomerByMobileNumber",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -221,7 +249,10 @@
 							"name": "fetchCustomerByMobileNumber WRONG",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -356,7 +387,10 @@
 							"name": "shutdownOverActuator",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						}
@@ -369,7 +403,10 @@
 							"name": "callEcho",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -377,7 +414,10 @@
 							"name": "callBuildVersion",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -476,7 +516,10 @@
 							"name": "fetchLoan",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -484,7 +527,10 @@
 							"name": "fetchLoansByMobile",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -555,7 +601,10 @@
 							"name": "callEcho",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -563,7 +612,10 @@
 							"name": "callBuildVersion",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -571,7 +623,10 @@
 							"name": "callCardDataInfo",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -579,7 +634,10 @@
 							"name": "callLiveCardDataInfo",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -784,7 +842,10 @@
 							"name": "encrypt",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -792,7 +853,10 @@
 							"name": "decrypt",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						}
@@ -805,7 +869,10 @@
 							"name": "apps_XML",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -875,7 +942,7 @@
 					"name": "gatewayserver",
 					"item": [
 						{
-							"name": "createCustomer",
+							"name": "nostra/createCustomer",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -889,13 +956,14 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8072/accounts/api/v1/create",
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8072",
 									"path": [
+										"nostra",
 										"accounts",
 										"api",
 										"v1",
@@ -906,7 +974,7 @@
 							"response": []
 						},
 						{
-							"name": "createLoan Short",
+							"name": "nostra/createLoan Short",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -920,13 +988,15 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8081/api/v1/create",
+									"raw": "http://localhost:8072/nostra/loans/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "8081",
+									"port": "8072",
 									"path": [
+										"nostra",
+										"loans",
 										"api",
 										"v1",
 										"create"
@@ -936,7 +1006,7 @@
 							"response": []
 						},
 						{
-							"name": "createLoan Long",
+							"name": "nostra/createLoan Long",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -950,13 +1020,14 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8072/loans/api/v1/create",
+									"raw": "http://localhost:8072/nostra/loans/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8072",
 									"path": [
+										"nostra",
 										"loans",
 										"api",
 										"v1",
@@ -967,7 +1038,7 @@
 							"response": []
 						},
 						{
-							"name": "createCard Credit",
+							"name": "nostra/createCard Credit",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -981,13 +1052,15 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8082/api/v1/create",
+									"raw": "http://localhost:8072/nostra/cards/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "8082",
+									"port": "8072",
 									"path": [
+										"nostra",
+										"cards",
 										"api",
 										"v1",
 										"create"
@@ -997,7 +1070,7 @@
 							"response": []
 						},
 						{
-							"name": "createCard Debit",
+							"name": "nostra/createCard Debit",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1011,13 +1084,15 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8082/api/v1/create",
+									"raw": "http://localhost:8072/nostra/cards/api/v1/create",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "8082",
+									"port": "8072",
 									"path": [
+										"nostra",
+										"cards",
 										"api",
 										"v1",
 										"create"
@@ -1027,18 +1102,19 @@
 							"response": []
 						},
 						{
-							"name": "fetchCustomerByMobileNumber FULL",
+							"name": "nostra/fetchCustomerByMobileNumber FULL",
 							"request": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8072/accounts/api/v1/fetch-full-customer?mobileNumber=8138487219",
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/fetch-full-customer?mobileNumber=8138487219",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8072",
 									"path": [
+										"nostra",
 										"accounts",
 										"api",
 										"v1",
@@ -1048,6 +1124,87 @@
 										{
 											"key": "mobileNumber",
 											"value": "8138487219"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/callContactInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/contact-info",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"accounts",
+										"api",
+										"v1",
+										"contact-info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/accounts-sleep",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/sleep?sleep=300",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"accounts",
+										"api",
+										"v1",
+										"sleep"
+									],
+									"query": [
+										{
+											"key": "sleep",
+											"value": "300"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/loans-sleep",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/loans/api/v1/sleep?sleep=300000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"loans",
+										"api",
+										"v1",
+										"sleep"
+									],
+									"query": [
+										{
+											"key": "sleep",
+											"value": "300000"
 										}
 									]
 								}
