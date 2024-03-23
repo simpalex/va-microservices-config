@@ -1183,6 +1183,29 @@
 							"response": []
 						},
 						{
+							"name": "nostra/accounts-getPath",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/get-path",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"accounts",
+										"api",
+										"v1",
+										"get-path"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "nostra/loans-sleep",
 							"request": {
 								"method": "GET",
@@ -1205,6 +1228,174 @@
 										{
 											"key": "sleep",
 											"value": "300000"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/cards-sleep",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/cards/api/v1/sleep?sleep=300",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"cards",
+										"api",
+										"v1",
+										"sleep"
+									],
+									"query": [
+										{
+											"key": "sleep",
+											"value": "300"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "KeyCloak",
+					"item": [
+						{
+							"name": "ClientCredentialsAccessToken",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										},
+										{
+											"key": "client_id",
+											"value": "nostra-callcenter-cc",
+											"type": "text"
+										},
+										{
+											"key": "client_secret",
+											"value": "3OSQmlQlyBl5aNH5nObS8auwKux8JHOn",
+											"type": "text"
+										},
+										{
+											"key": "scope",
+											"value": "openid email profile",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:7080/realms/master/protocol/openid-connect/token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7080",
+									"path": [
+										"realms",
+										"master",
+										"protocol",
+										"openid-connect",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "gateway-security",
+					"item": [
+						{
+							"name": "nostra/callContactInfo_PermitAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/contact-info",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"accounts",
+										"api",
+										"v1",
+										"contact-info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/loans-sleep_PermitAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/loans/api/v1/sleep?sleep=300",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"loans",
+										"api",
+										"v1",
+										"sleep"
+									],
+									"query": [
+										{
+											"key": "sleep",
+											"value": "300"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/cards-sleep_PermitAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8072/nostra/cards/api/v1/sleep?sleep=300",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"cards",
+										"api",
+										"v1",
+										"sleep"
+									],
+									"query": [
+										{
+											"key": "sleep",
+											"value": "300"
 										}
 									]
 								}
