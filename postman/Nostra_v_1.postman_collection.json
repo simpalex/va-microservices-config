@@ -1401,6 +1401,485 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "nostra/createCustomer_NoAuth",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Vlad Aleko\",\r\n    \"email\": \"ofolder@yahoo+com\",\r\n    \"mobileNumber\": \"8138487219\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"accounts",
+										"api",
+										"v1",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/createCustomer_WithAuth_CC",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "client_authentication",
+											"value": "body",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "openid email profile",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "3OSQmlQlyBl5aNH5nObS8auwKux8JHOn",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nostra-callcenter-cc",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:7080/realms/master/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "client-credentials_access-token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Vlad Aleko\",\r\n    \"email\": \"ofolder@yahoo+com\",\r\n    \"mobileNumber\": \"8138487219\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"accounts",
+										"api",
+										"v1",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/createLoanShort_WithAuth_CC",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"loanNumber\": \"123456789\",\r\n    \"loanType\": \"Short\",\r\n    \"totalLoan\": 100,\r\n    \"amountPaid\": 20,\r\n    \"outstandingAmount\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/nostra/loans/api/v1/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"loans",
+										"api",
+										"v1",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/createCardCredit_WithAuth_CC",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "client_authentication",
+											"value": "body",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "openid email profile",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "3OSQmlQlyBl5aNH5nObS8auwKux8JHOn",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nostra-callcenter-cc",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:7080/realms/master/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "client-credentials_access-token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"cardNumber\": \"1111222233334444\",\r\n    \"cardType\": \"Credit\",\r\n    \"totalLimit\": 100,\r\n    \"amountUsed\": 20,\r\n    \"availableAmount\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/nostra/cards/api/v1/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"cards",
+										"api",
+										"v1",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/createCustomer_WithAuth_Code",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "client_authentication",
+											"value": "body",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "openid email profile",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "3OSQmlQlyBl5aNH5nObS8auwKux8JHOn",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nostra-callcenter-cc",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:7080/realms/master/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "client-credentials_access-token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Vlad Aleko\",\r\n    \"email\": \"ofolder@yahoo+com\",\r\n    \"mobileNumber\": \"8138487219\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/nostra/accounts/api/v1/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"accounts",
+										"api",
+										"v1",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/createLoanShort_WithAuth_Code",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "client_authentication",
+											"value": "body",
+											"type": "string"
+										},
+										{
+											"key": "state",
+											"value": "ft54t54v55yv54y54v54yvy54",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "qBur8j5kfR1DYxKDGdJGbMpcvyORUT7m",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nostra-callcenter-ac",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:7080/realms/master/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:7080/realms/master/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "useBrowser",
+											"value": true,
+											"type": "boolean"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "auth-code_access-token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "openid email profile",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"loanNumber\": \"123456789\",\r\n    \"loanType\": \"Short\",\r\n    \"totalLoan\": 100,\r\n    \"amountPaid\": 20,\r\n    \"outstandingAmount\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/nostra/loans/api/v1/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"loans",
+										"api",
+										"v1",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nostra/createCardCredit_WithAuth_Code",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "client_authentication",
+											"value": "body",
+											"type": "string"
+										},
+										{
+											"key": "state",
+											"value": "ft54t54v55yv54y54v54yvy54",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "qBur8j5kfR1DYxKDGdJGbMpcvyORUT7m",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nostra-callcenter-ac",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:7080/realms/master/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:7080/realms/master/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "useBrowser",
+											"value": true,
+											"type": "boolean"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "auth-code_access-token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "openid email profile",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"mobileNumber\": \"8138487219\",\r\n    \"cardNumber\": \"1111222233334444\",\r\n    \"cardType\": \"Credit\",\r\n    \"totalLimit\": 100,\r\n    \"amountUsed\": 20,\r\n    \"availableAmount\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8072/nostra/cards/api/v1/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8072",
+									"path": [
+										"nostra",
+										"cards",
+										"api",
+										"v1",
+										"create"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				}
